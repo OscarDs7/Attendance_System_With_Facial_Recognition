@@ -1,10 +1,9 @@
-# asistencia_final_yaw_200_fixed.py
-"""
-Versión corregida y robusta de asistencia_final_yaw_200.py
- - Correcciones: load_database (no sobrescribir db), manejo seguro de PCA,
-   defensas alrededor de face_mesh.process, draw_detection_label que evita traslapes,
-   reintentos controlados en captura de ángulos, protección de guardado/lectura pickle.
-"""
+# ---- Sistema de Reconocimiento Facial para Registro de Asistencias ----
+# ---- Basado en MediaPipe Face Mesh y SVM ----
+# English version:
+# ---- Facial Recognition System for Attendance Logging ----
+# ---- Based on MediaPipe Face Mesh and SVM ----
+
 import cv2
 import mediapipe as mp
 import numpy as np
